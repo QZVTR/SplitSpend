@@ -71,6 +71,7 @@ function App() {
       <>
       <Navbar currView={currView} setCurrView={setCurrView}/>
       <div className='content'>
+        <h2>Find out how much money you owe or are owed after splitting a bill equally.</h2>
         <Box 
           component="form"
           sx={{'& .MuiTextField-root': { m: 1, width: '25ch' },

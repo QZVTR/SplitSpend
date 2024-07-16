@@ -56,7 +56,7 @@ const Results: React.FC<ResultsProps> = ({ people, currency }) => {
                 <TableCell>{person.name}</TableCell>
                 <TableCell>{currency}{person.value}</TableCell>
                 <TableCell>
-                  {calculateOwedAmount(person) > 0 ? `Owed ${currency}${calculateOwedAmount(person)}` : `Owes ${currency}${-calculateOwedAmount(person)}`}
+                  {calculateOwedAmount(person) > 0 ? `Owes ${currency}${calculateOwedAmount(person)}` : `Owed ${currency}${-calculateOwedAmount(person)}`}
                 </TableCell>
               </TableRow>
             ))}
